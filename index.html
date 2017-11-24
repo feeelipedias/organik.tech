@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-43437103-12"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-43437103-12');
+</script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Organik.Tech</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="images/00008.png" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300i,400,700,900">
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+</head>
+
+<body>
+    <svg class="hidden">
+            <symbol id="icon-arrow-nav" viewBox="208.3 352 4.2 6.4">
+                <title>arrow-nav</title>
+                <polygon points="212.1,357.3 211.5,358 208.7,355.1 211.5,352.3 212.1,353 209.9,355.1"></polygon>
+            </symbol>
+        </svg>
+        <main class="site-wrapper">
+            <div class="content">
+                <div class="slide-wrapper">
+                    <div class="slide-item"> <!-- loop this -->
+                        <img src="img/001.png" class="slide-item__image">
+                    </div>  
+                </div>
+                <button class="scene-nav scene-nav--prev" data-nav="previous"><svg class="icon icon--arrow-nav-prev"><use xlink:href="#icon-arrow-nav"></use></svg></button>
+                <button class="scene-nav scene-nav--next" data-nav="next"><svg class="icon icon--arrow-nav-next"><use xlink:href="#icon-arrow-nav"></use></svg></button>
+            </div>
+        </main>
+        <script src="js/demo.js"></script>
+        <script src="js/pixi.min.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/main5.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script>
+            imagesLoaded(document.body, () => document.body.classList.remove('loading'));
+            
+            var spriteImages = document.querySelectorAll( '.slide-item__image' );
+            var spriteImagesSrc = [];
+            var texts = [];
+
+            for ( var i = 0; i < spriteImages.length; i++ ) {
+                var img = spriteImages[i];
+                // Set the texts you want to display to each slide 
+                // in a sibling element of your image and edit accordingly
+                if ( img.nextElementSibling ) {
+                    texts.push(img.nextElementSibling.innerHTML);
+                } else {
+                    texts.push('');
+                }
+                spriteImagesSrc.push( img.getAttribute('src' ) );
+            }
+      
+            var initCanvasSlideshow = new CanvasSlideshow({
+                sprites: spriteImagesSrc,
+                displacementImage: 'img/dmaps/2048x2048/clouds.jpg',
+                autoPlay: true,
+                autoPlaySpeed: [4, 3],
+                displaceScale: [5000, 10000],
+                interactive: true,
+                interactionEvent: 'click', // 'click', 'hover', 'both' 
+                displaceAutoFit: false,
+                dispatchPointerOver: true // restarts pointerover event after click 
+            });
+        </script>
+
+
+
+
+
+    <div style="position: absolute;z-index: 99999999;left: 342px;top: 230px;"><img src="images/walk.gif"/></div>
+    <div style="position: absolute;z-index: 999999999;left: 120px;top: 100px;"><img src="images/rgb.png"/></div>
+    <div style="position: absolute;z-index: 9999999;left: 1120px;top: 100px;"><img src="images/rgb.png"/></div>
+    <div style="position: absolute;z-index: 9999999;left: 120px;top: 1400px;"><img src="images/rgb.png"/></div>
+    <div style="position: absolute;z-index: 9999999;left: 120px;top: 700px;"><img src="images/rgb.png"/></div>
+    <div style="position: absolute;z-index: 9999999;left: 1520px;top: 10px;"><img src="images/rgb.png"/></div>
+    <div style="position: absolute;z-index: 9999999;left: 720px;top: 100px;"><img src="images/rgb.png"/></div>
+    <div style="position: absolute;z-index: 9999999;left: 73px;top: 678px;"><img src="images/004.gif"/></div>
+    <div style="position: absolute;z-index: 9999999;left: 1500px;top: 1700px;"><img src="images/rgb.png"/></div>
+
+<div style="position: absolute; z-index: 999999; top: 0; left: 0; margin: 50px;">
+    <img src="images/00013.gif"/>
+    <img src="images/00012.gif"/>
+    <img src="images/00011.gif"/>
+    <img src="images/00010.gif"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/005.gif"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00010.gif"/>
+    <img src="images/00011.gif"/>
+    <img src="images/00012.gif"/>
+    <img src="images/00013.gif"/>
+    <img src="images/00012.gif"/>
+    <img src="images/00011.gif"/>
+    <img src="images/00010.gif"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00010.gif"/>
+    <img src="images/00011.gif"/>
+    <img src="images/00012.gif"/>
+    <img src="images/00013.gif"/>
+    <img src="images/00012.gif"/>
+    <img src="images/00011.gif"/>
+    <img src="images/00010.gif"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <div style="position: absolute;z-index: 9999999;left: 134px;top: 1700px;"><img src="images/001.gif" width="347px" /></div>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00010.gif"/>
+    <img src="images/00011.gif"/>
+    <img src="images/00012.gif"/>
+    <img src="images/00013.gif"/>
+    <img src="images/00012.gif"/>
+    <img src="images/00011.gif"/>
+    <img src="images/00010.gif"/>
+    <img src="images/00010.gif"/>
+    <img src="images/00011.gif"/>
+    <img src="images/00012.gif"/>
+    <img src="images/00013.gif"/>
+    <img src="images/00012.gif"/>
+    <img src="images/00011.gif"/>
+    <img src="images/00010.gif"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00010.gif"/>
+    <img src="images/00011.gif"/>
+    <img src="images/00012.gif"/>
+    <img src="images/00013.gif"/>
+    <img src="images/00012.gif"/>
+    <img src="images/00011.gif"/>
+    <img src="images/00010.gif"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00010.gif"/>
+    <img src="images/00011.gif"/>
+    <img src="images/00012.gif"/>
+    <img src="images/00013.gif"/>
+    <img src="images/00012.gif"/>
+    <img src="images/005.gif"/>
+    <img src="images/00011.gif"/>
+    <img src="images/00010.gif"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/0001x.jpg"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="images/00001.png"/>
+    <img src="images/00002.png"/>
+    <img src="images/00003.png"/>
+    <img src="images/00004.png"/>
+    <img src="images/00005.png"/>
+    <img src="images/00006.png"/>
+    <img src="images/00007.png"/>
+    <img src="images/00008.png"/>
+    <img src="images/00009.png"/>
+    <img src="walk.gif"/>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
